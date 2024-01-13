@@ -97,7 +97,7 @@ class Mysql:
                 content ={'id': data[0], 'nama_file': data[1],'tipe_sayur': data[2],'keterangan': data[3]}
                 content_data.append(content)
                 content ={}
-            return content_data
+            return jsonify(content_data)
         else:
             return False
 
